@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    height: 100%; 
+    box-sizing: border-box;
+    background: url('../img/P_bg.jpg');
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.main__wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__logo img {
+    width: 133px;
+}
+
+.content { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: visible-title 3s;
+}
+
+.content__title img {
+    height: 71px;
+}
+
+.content__slider {
+    width: 100%;
+}
+
+.slider__show {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider__myslides {
+    position: relative;
+    margin-left: 72px;
+}
+
+.slider__prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 75%;
+}
+
+.slider__prev img, .slider__next img {
+    width: 50px;
+}
+
+.slider__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+.slider__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider__img img{
+    width: 285px;
+}
+
+.slider__switches {
+    text-align: center;
+}
+
+.switches__dot {
+    background: none;
+    border: none;
+}
+
+.switches__dot img{
+    width: 45px;
+}
+
+.switches__dot:focus {
+    outline: none;
+}
+
+.slider__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 72px;
+}
+
+.slider__description img {
+    width: 231px;
+}
+
+.content__desde {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content__desde img {
+    width: 170px;
+    height: 47px;
+}
+
+.un-block {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer__fitbit img {
+    height: 45px;
+}
+
+.footer__cta img {
+    height: 45px;
+}
+
+@media screen and (max-width: 565px) {
+    .header__logo img {
+        width: 200px;
+    }
+    .content__title img {
+        height: 120px;
+    }
+    .slider__img img{
+        width: 347px;
+    }
+    .slider__next {
+        left: 114%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .content__title img {
+        height: 149px;
+    }
+    .slider__myslides {
+        width: 435px;
+        margin-left: 0;
+    }
+    .slider__img img{
+        width: 422px;
+    }
+    .slider__prev img, .slider__next img {
+        width: 94px;
+    }
+    .slider__next {
+        left: 80%;
+    }
+    .slider__prev {
+        left: 7%;
+    }
+    .switches__dot img {
+        width: 81px;
+    }
+    .slider__description {
+        height: 133px;
+    }
+    .slider__description img {
+        width: 468px;
+    }
+    .content__desde img {
+        width: 274px;
+        height: 80px;
+    }
+    .footer {
+        padding-top: 62px;
+    }
+    .footer__fitbit img {
+        height: 95px;
+    }
+    .footer__cta img {
+        height: 97px;
+    }
+}

@@ -1,0 +1,168 @@
+body {
+    background: url('../img/P_bg.jpg');
+}
+
+.wrapper-preload {
+    height: 100%;
+}
+
+.header-preload {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-preload__logo img{
+    width: 133px;
+}
+
+.content-preload {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-preload__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: visible-title 3s;
+    margin: 20px 0 10px 0;
+}
+
+.content-preload__title img {
+    height: 71px;
+}
+
+.content-preload__watches {
+    position: relative;
+    height: 315px;
+    margin-top: 30px;
+}
+
+.watches__image {
+    position: absolute;
+    width: 300px;
+    height: 316px;
+}
+
+.watches__image--high {
+    z-index: 3;
+    right: 47%;
+    animation: left-watch 2s;
+}
+
+.watches__image--middle {
+    z-index: 2;
+    right: 28%;
+}
+
+.watches__image--low {
+    z-index: 1;
+    left: 50%;
+    animation: right-watch 2s;
+}
+
+.content-preload__price {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    animation: visible-title 3s;
+}
+
+.content-preload__price img {
+    height: 100px;
+}
+
+.footer-preload {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+}
+
+.footer-preload__fitbit img {
+    height: 45px;
+}
+
+.footer-preload__cta img {
+    height: 45px;
+}
+
+@keyframes left-watch {
+    from {
+        top: -89px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes right-watch {
+    from {
+        top: 89px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes visible-title {
+    from {
+        opacity: 0.01;
+    }
+    to {
+        opacity: 0.99
+    }
+}
+
+
+@media screen and (min-width: 565px) {
+    .header-preload__logo img {
+        width: 200px;
+    }
+    .content-preload__title img {
+        height: 120px;
+    }
+    .content-preload__price img {
+        height: 148px;
+    }
+    .footer-preload {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .header-preload__logo img {
+        width: 340px;
+    }
+    .content-preload__title img {
+        height: 165px;
+    }
+    .footer-preload__fitbit img {
+        height: 80px;
+    }
+    .footer-preload__cta img {
+        height: 72px;
+    }
+    .watches__image {
+        width: 396px;
+        height: 430px;
+    }
+    .watches__image--middle {
+        right: 21%;
+    }
+    .content-preload__price img {
+        height: 246px;
+    }
+    .content-preload__price {
+        margin-top: 176px;
+    }
+    .footer-preload__fitbit img {
+        height: 104px;
+    }
+    .footer-preload__cta img {
+        height: 91px;
+    }
+    .footer-preload {
+        padding-top: 80px;
+    }
+}
+

@@ -1,0 +1,20 @@
+.window-stub img{
+    position: absolute;
+    top: 40%;
+    left: 33%;
+}
+
+@media screen and (orientation:landscape) {
+    body {
+        background: white;
+    }
+    .wrapper {
+        display: none;
+    }
+    .wrapper-preload {
+        display: none;
+    }
+    .window-stub {
+        display: block;
+    }
+}
